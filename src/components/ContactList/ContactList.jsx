@@ -8,8 +8,6 @@ export const ContactList = () => {
   const contacts = useSelector(state => state.contacts.list);
   const dispatch = useDispatch();
 
-  console.log(contacts);
-
   const handleDeleteContact = id => {
     dispatch(deleteContact(id));
   };
